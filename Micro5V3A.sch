@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:Micro5V3A-cache
 EELAYER 26 0
 EELAYER END
 $Descr User 8268 5827
@@ -302,110 +303,36 @@ Wire Wire Line
 	6125 1575 6025 1575
 Text Label 6025 1575 2    50   ~ 0
 ENABLE
-Wire Wire Line
-	6125 1875 6075 1875
-Text Label 6025 1875 2    50   ~ 0
-5V
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5D1838BF
-P 6325 1875
-F 0 "J2" H 6404 1867 50  0000 L CNN
-F 1 "5V" H 6404 1776 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6325 1875 50  0001 C CNN
-F 3 "~" H 6325 1875 50  0001 C CNN
-	1    6325 1875
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5CAC5765
+P 6325 2325
+F 0 "J2" H 6405 2367 50  0000 L CNN
+F 1 "Conn_01x03" H 6405 2276 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6325 2325 50  0001 C CNN
+F 3 "~" H 6325 2325 50  0001 C CNN
+	1    6325 2325
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6125 1975 6075 1975
-Wire Wire Line
-	6075 1975 6075 1875
-Connection ~ 6075 1875
-Wire Wire Line
-	6075 1875 6025 1875
-Wire Wire Line
-	6125 2150 6075 2150
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5D184600
-P 6325 2150
-F 0 "J3" H 6404 2142 50  0000 L CNN
-F 1 "GND" H 6404 2051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6325 2150 50  0001 C CNN
-F 3 "~" H 6325 2150 50  0001 C CNN
-	1    6325 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6125 2250 6075 2250
-Wire Wire Line
-	6075 2250 6075 2150
 $Comp
 L power:GND #PWR08
-U 1 1 5D1861F3
-P 6075 2275
-F 0 "#PWR08" H 6075 2025 50  0001 C CNN
-F 1 "GND" H 6080 2102 50  0000 C CNN
-F 2 "" H 6075 2275 50  0001 C CNN
-F 3 "" H 6075 2275 50  0001 C CNN
-	1    6075 2275
-	1    0    0    -1  
+U 1 1 5CAC582B
+P 6050 2325
+F 0 "#PWR08" H 6050 2075 50  0001 C CNN
+F 1 "GND" V 6055 2197 50  0000 R CNN
+F 2 "" H 6050 2325 50  0001 C CNN
+F 3 "" H 6050 2325 50  0001 C CNN
+	1    6050 2325
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6075 2275 6075 2250
-Connection ~ 6075 2250
+	6050 2325 6125 2325
+Text Label 5925 2425 2    50   ~ 0
+5V
 Wire Wire Line
-	6125 2750 6075 2750
-$Comp
-L Connector_Generic:Conn_01x02 J4
-U 1 1 5D186FB7
-P 6325 2750
-F 0 "J4" H 6405 2742 50  0000 L CNN
-F 1 "VIN" H 6405 2651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6325 2750 50  0001 C CNN
-F 3 "~" H 6325 2750 50  0001 C CNN
-	1    6325 2750
-	1    0    0    -1  
-$EndComp
+	5925 2425 6125 2425
 Wire Wire Line
-	6125 2850 6075 2850
-Wire Wire Line
-	6075 2850 6075 2750
-Connection ~ 6075 2750
-Wire Wire Line
-	6075 2750 6025 2750
-Wire Wire Line
-	6125 3025 6075 3025
-$Comp
-L Connector_Generic:Conn_01x02 J5
-U 1 1 5D186FC3
-P 6325 3025
-F 0 "J5" H 6404 3017 50  0000 L CNN
-F 1 "GND" H 6404 2926 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6325 3025 50  0001 C CNN
-F 3 "~" H 6325 3025 50  0001 C CNN
-	1    6325 3025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6125 3125 6075 3125
-Wire Wire Line
-	6075 3125 6075 3025
-$Comp
-L power:GND #PWR09
-U 1 1 5D186FCC
-P 6075 3150
-F 0 "#PWR09" H 6075 2900 50  0001 C CNN
-F 1 "GND" H 6080 2977 50  0000 C CNN
-F 2 "" H 6075 3150 50  0001 C CNN
-F 3 "" H 6075 3150 50  0001 C CNN
-	1    6075 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6075 3150 6075 3125
-Connection ~ 6075 3125
-Text Label 6025 2750 2    50   ~ 0
+	6125 2225 5925 2225
+Text Label 5925 2225 2    50   ~ 0
 VIN
 $EndSCHEMATC
